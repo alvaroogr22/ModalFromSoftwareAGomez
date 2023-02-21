@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+  font-size: 2.3vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+nav {
+  width: 100%;
+  padding: 2vh;
+  display: block;
+}
+img#logo {
+  width: 40%;
+  border-right: 1px solid whitesmoke;
+  padding-right: 1vh;
+}
+
+a#barraNav2 {
+  text-align: right;
+  color: rgb(255, 255, 255);
+  float: right;
+}
+
+.boton {
+  color: rgb(0, 0, 0);
+  padding: 1vh;
+  text-decoration-line: none;
+  font-size: 2vh;
+  cursor: pointer;
+  border-right: 1px solid whitesmoke;
+}
+.boton:hover {
+  font-size: 1em;
+  font-weight: 300;
+}
+.aintro {
+  padding: 1vh 10vh 1vh 10vh;
+}
+.intro {
+  border-radius: 0.1em;
+  border-style: solid;
+  border-color: whitesmoke;
+  padding: 4vh;
+  background-color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 70);
+}
+span {
+  color: rgba(245, 245, 245, 0.603);
+}
+a#mencionFromSoftware {
+  font-size: 3vh;
+}
+.imgMain {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.ImgMainImg {
+  width: 100%;
+  height: 100%;
+  background-color: lightpink;
+  display: block;
+  object-fit: contain;
+}
+
+div.col {
+  margin: 4vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+img.juegos {
+  width: 30vh;
+  border-radius: 0.1em;
+  border-style: solid;
+
+  border-color: rgb(88, 88, 88);
+}
+img:hover {
+  border-color: whitesmoke;
+}
+
+@media screen and (orientation: landscape) {
+  .portaFoto {
+    max-width: 1920px;
+    max-height: 1280px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .portaFoto {
+    max-width: 800px;
+    max-height: 1200px;
+  }
+}
+
+img.juegosec {
+  width: 100vh;
+  border-radius: 0.1em;
+  border-style: solid;
+  border-color: whitesmoke;
+  display: block;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: 2em;
+  text-align: center;
+}
+main {
+  width: 80%;
+  margin: auto;
+}
+
+/* Estilo del botón del Modal */
+.modal {
+  text-align: center;
+  position: fixed;
+  margin-top: 82.57vh;
+  padding: 10px 20px 10px 20px;
+  border-color: rgb(88, 88, 88);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #000;
+}
+/* Estilo del botón del Modal al pasar el ratón por encima */
+.modal:hover {
+  border-color: whitesmoke;
+}
+
+/* Estilo del texto en la pantalla al desplegar el Modal */
+.textoModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+/* Al ser targeteado el textoModal nos aparece el texto */
+.textoModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Estilo del texto Modal */
+.textoModal > div {
+  width: 300px;
+  text-align: center;
+  position: relative;
+  margin: 15% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+/* Estilo del boton para cerrar el Modal */
+.botonCerrar {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgb(88, 88, 88);
+  border-radius: 1vh;
+  border-style: solid;
+  color: whitesmoke;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+/* Cambia el border-color del boton cerrar al pasar por encima suyo */
+.botonCerrar:hover {
+  border-color: whitesmoke;
+}
